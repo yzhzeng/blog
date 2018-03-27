@@ -1,12 +1,12 @@
-# Permalinks
+ï»¿# Permalinks
 #
 # Use of `relative_permalinks` ensures post links from the index work properly.
 permalink:           pretty
 #relative_permalinks: true
 
 # Setup
-title:               ½ğµ¶Áî¹«
-tagline:             'Ò»¸öITŒÅË¿µÄ²©¿Í'
+title:               é‡‘åˆ€ä»¤å…¬
+tagline:             'ä¸€ä¸ªITå±Œä¸çš„åšå®¢'
 description:         'A reserved <a href="http://jekyllrb.com" target="_blank">Jekyll</a> theme that places the utmost gravity on content with a hidden drawer. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.'
 url:                 http://yzhzeng.github.io/blog/
 baseurl:             /blog
@@ -21,4 +21,4 @@ author:
 # Custom vars
 version:             1.0.0
 time:                2018-03-26
-copy:                °æÈ¨ËùÓĞ
+copy:                ç‰ˆæƒæ‰€æœ‰
