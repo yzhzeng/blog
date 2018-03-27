@@ -1,0 +1,55 @@
+
+
+
+######################### theme kunka condigure ##############################################
+# Where things are
+source:       .
+destination:  ./_site
+layouts:      ./_layouts
+paginate:     8
+
+# Handling Reading
+#safe:         false
+encoding:     "utf-8"
+#markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+textile_ext:  "textile"
+
+# Filtering Content
+# Conversion
+markdown:     kramdown
+highlighter:  pygments
+lsi:          false
+excerpt_separator: "\n\n"
+
+# Serving
+
+# Outputting
+permalink:     date
+
+
+#Site config
+title: Jekyll Theme
+description: Just another Jekyll theme design and code by zhanxin.info.
+keywords: Jekyll Theme
+url: /jekyll-blog
+feed: /atom.xml
+favicon: http://jekyllrb.com/favicon.png
+
+#Nav config
+#Author config
+#Follow me, you can choose your icon by http://fortawesome.github.io/Font-Awesome/icons/#brand
+
+#################################### global configure #######################################
+
+username: snoopies
+baseurl: /jekyll-blog
+#markdown: redcarpet
+#safe: false
+#highlighter: pygments
+#title: 飞鸟集
+#disqusname: minixalpha
+
+# theme can be: hack, leap-day, merlot, midnight, minimal, modernist, slate, time-machine, kunka
+# those themes are all come from GitHub Pages Themes
+
+theme: jekyll-theme-minimal
