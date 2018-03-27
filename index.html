@@ -1,4 +1,4 @@
-﻿---
+---
 layout: default
 title: Home
 ---
@@ -21,18 +21,18 @@ title: Home
 
 <div class="pagination">
   {% if paginator.next_page %}
-    <a class="pagination-item older" href="{{ site.baseurl }}/page{{paginator.next_page}}">前页</a>
+    <a class="pagination-item older" href="{{ site.baseurl }}/page{{paginator.next_page}}">ǰҳ</a>
   {% else %}
-    <span class="pagination-item older">前页</span>
+    <span class="pagination-item older">ǰҳ</span>
   {% endif %}
   {% if paginator.previous_page %}
     {% if paginator.page == 2 %}
-      <a class="pagination-item newer" href="{{ site.baseurl }}/">后页</a>
+      <a class="pagination-item newer" href="{{ site.baseurl }}/">��ҳ</a>
     {% else %}
-      <a class="pagination-item newer" href="{{ site.baseurl }}/page{{paginator.previous_page}}">后页</a>
+      <a class="pagination-item newer" href="{{ site.baseurl }}/page{{paginator.previous_page}}">��ҳ</a>
     {% endif %}
   {% else %}
-    <span class="pagination-item newer">后页</span>
+    <span class="pagination-item newer">��ҳ</span>
   {% endif %}
 </div>
 
