@@ -185,6 +185,7 @@ button.close {
 .zs-modal-footer img {
     height: 30px;
     min-width: 85px;
+    display:inline;
 }
 
 .zs-modal-pay {
