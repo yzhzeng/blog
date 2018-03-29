@@ -1,5 +1,5 @@
----
-layout: default
+﻿---
+layout: blog
 title: second blog
 ---
 <h2>{{ page.title }}</h2>
