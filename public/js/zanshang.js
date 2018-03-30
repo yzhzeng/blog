@@ -8,7 +8,7 @@ function ZanShang(){
   this.zsFooter = $('.zs-modal-footer');
   var that = this;
   $('.show-zs').on('click',function(){
-    //ç‚¹å‡»èµèµæŒ‰é’®å‡ºç°å¼¹çª—
+    //µã»÷ÔŞÉÍ°´Å¥³öÏÖµ¯´°
     that._show();
     that._init();
   })
@@ -34,26 +34,54 @@ ZanShang.prototype._init = function(){
   })
   this.zsbtn.each(function(el){
     $(this).on('click',function(){
-      var num = $(this).attr('data-num'); //æŒ‰é’®çš„å¯¹åº”çš„æ•°å­—
-      var type = $('.zs-type:radio:checked').val();//ä»˜æ¬¾æ–¹å¼
-      //æ ¹æ®ä¸åŒä»˜æ¬¾æ–¹å¼å’Œé€‰æ‹©å¯¹åº”çš„æŒ‰é’®çš„æ•°å­—æ¥ç”Ÿæˆå¯¹åº”çš„äºŒç»´ç å›¾ç‰‡ï¼Œä½ å¯ä»¥è‡ªå®šä¹‰è¿™ä¸ªå›¾ç‰‡çš„è·¯å¾„ï¼Œé»˜è®¤æ”¾åœ¨å½“å‰imagesç›®å½•ä¸­
-      //å‡å¦‚ä½ éœ€è¦åŠ ä¸€ä¸ªè¿œç¨‹è·¯å¾„ï¼Œæ¯”å¦‚æˆ‘çš„å°±æ˜¯
+      var num = $(this).attr('data-num'); //°´Å¥µÄ¶ÔÓ¦µÄÊı×Ö
+      var type = $('.zs-type:radio:checked').val();//¸¶¿î·½Ê½
+      //¸ù¾İ²»Í¬¸¶¿î·½Ê½ºÍÑ¡Ôñ¶ÔÓ¦µÄ°´Å¥µÄÊı×ÖÀ´Éú³É¶ÔÓ¦µÄ¶şÎ¬ÂëÍ¼Æ¬£¬Äã¿ÉÒÔ×Ô¶¨ÒåÕâ¸öÍ¼Æ¬µÄÂ·¾¶£¬Ä¬ÈÏ·ÅÔÚµ±Ç°imagesÄ¿Â¼ÖĞ
+      //¼ÙÈçÄãĞèÒª¼ÓÒ»¸öÔ¶³ÌÂ·¾¶£¬±ÈÈçÎÒµÄ¾ÍÊÇ
       //http://caibaojian.com/wp-content/themes/blue/images/pay/'+type+'-'+num+'.png';
       var src = 'images/'+type+'-'+num+'.png';
       var text = $(this).html();
-      var payType=$('#pay-type'), payImage = $('#pay-image'),payText = $('#pay-text');
+      var payType=$('#pay-type'), payImage = $('#pay-image'),payText = $('#pay-text'),payMode = $('#pay-mode');
       if(type=='alipay'){
-        payType.html('æ”¯ä»˜å®');
+        payType.html('Ö§¸¶±¦');
       }else{
-        payType.html('å¾®ä¿¡');
+        payType.html('Î¢ĞÅ');
+	  if(isMobile() && isWeiXin()){
+	      payMode.html('³¤°´¶şÎ¬ÂëÊ¶±ğ²¢Ö§¸¶');
+        }
       }
       payImage.attr('src',src);
       payText.html(text);
       that.zsPay.show();
       that.zsBtns.hide();
       that.zsFooter.hide();
-
+      if(type=='alipay'){
+          $(location).attr('href', 'http://www.jb51.net');
+      }
     })
   })
 }
 var zs = new ZanShang();
+
+function isMobile(){
+    var ua = navigator.userAgent;
+    var ipad = ua.match(/(iPad).*OS\s([\d_]+)/),
+        isIphone = !ipad && ua.match(/(iPhone\sOS)\s([\d_]+)/),
+        isAndroid = ua.match(/(Android)\s+([\d.]+)/),
+        isMobile = isIphone || isAndroid;
+    if(isMobile) {
+        return true;
+    }else {
+        return false;
+    }
+}
+
+function isWeiXin() {
+    var ua = window.navigator.userAgent.toLowerCase();
+    if (ua.match(/MicroMessenger/i) == 'micromessenger') {
+        return true;
+    } else {
+        return false;
+    }
+}
+
