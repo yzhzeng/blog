@@ -44,10 +44,11 @@ ZanShang.prototype._init = function(){
       var payType=$('#pay-type'), payImage = $('#pay-image'),payText = $('#pay-text'),payMode = $('#pay-mode');
       if(type=='alipay'){
         payType.html('支付宝');
+        payMode.html('扫描二维码完成支付');
       }else{
         payType.html('微信');
 	  if(/micromessenger/.test(navigator.userAgent.toLowerCase())){
-	      payMode.html('长按二维码识别并支付');
+	      payMode.html('长按二维码完成支付');
         }
       }
       payImage.attr('src',src);
