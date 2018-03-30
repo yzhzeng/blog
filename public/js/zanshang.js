@@ -56,7 +56,7 @@ ZanShang.prototype._init = function(){
       that.zsBtns.hide();
       that.zsFooter.hide();
       if(type=='alipay'){
-          $(location).attr('href', 'http://www.jb51.net');
+          $(location).attr('href', 'HTTPS://QR.ALIPAY.COM/FKX03035ISO2COAFADZID4');
       }
     })
   })
