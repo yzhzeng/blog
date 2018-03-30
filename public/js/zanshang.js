@@ -55,7 +55,7 @@ ZanShang.prototype._init = function(){
       that.zsPay.show();
       that.zsBtns.hide();
       that.zsFooter.hide();
-      if(type=='alipay' && !(/micromessenger/.test(navigator.userAgent.toLowerCase()))){
+      if(type=='alipay' && !/micromessenger/.test(navigator.userAgent.toLowerCase())){
           $(location).attr('href', 'HTTPS://QR.ALIPAY.COM/FKX03035ISO2COAFADZID4');
       }
     })
