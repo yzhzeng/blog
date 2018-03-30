@@ -51,7 +51,7 @@ ZanShang.prototype._init = function(){
         }
       }
       payImage.attr('src',src);
-      payText.html(text);
+      payText.html('￥'+ num + '元');
       that.zsPay.show();
       that.zsBtns.hide();
       that.zsFooter.hide();
