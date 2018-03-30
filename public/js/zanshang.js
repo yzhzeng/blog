@@ -78,8 +78,8 @@ function isMobile(){
 */
 function isWeiXin() {
     var ua = navigator.userAgent.toLowerCase();
-alert(/micromessenger/.test(ua)));
-    if (/micromessenger/.test(ua))) {
+alert(/micromessenger/.test(ua));
+    if (/micromessenger/.test(ua)) {
         return true;
     } else {
         return false;
