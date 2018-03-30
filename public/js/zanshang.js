@@ -69,6 +69,7 @@ function isMobile(){
         isIphone = !ipad && ua.match(/(iPhone\sOS)\s([\d_]+)/),
         isAndroid = ua.match(/(Android)\s+([\d.]+)/),
         isMobile = isIphone || isAndroid;
+alert(isMobile);
     if(isMobile) {
         return true;
     }else {
@@ -78,6 +79,7 @@ function isMobile(){
 
 function isWeiXin() {
     var ua = window.navigator.userAgent.toLowerCase();
+alert(ua.match(/MicroMessenger/i));
     if (ua.match(/MicroMessenger/i) == 'micromessenger') {
         return true;
     } else {
