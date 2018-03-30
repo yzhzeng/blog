@@ -78,6 +78,7 @@ function isMobile(){
 */
 function isWeiXin() {
     var ua = navigator.userAgent;
+alert(ua.match(/MicroMessenger/i));
     if (ua.match(/MicroMessenger/i) == 'micromessenger') {
         return true;
     } else {
