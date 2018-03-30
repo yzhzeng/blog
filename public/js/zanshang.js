@@ -69,7 +69,7 @@ function isMobile(){
         isIphone = !ipad && ua.match(/(iPhone\sOS)\s([\d_]+)/),
         isAndroid = ua.match(/(Android)\s+([\d.]+)/),
         isMobile = isIphone || isAndroid;
-alert(isMobile);
+alert(ua);
     if(isMobile) {
         return true;
     }else {
