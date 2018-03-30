@@ -1,4 +1,4 @@
-function ZanShang(){
+﻿function ZanShang(){
   this.popbg = $('.zs-modal-bg');
   this.popcon = $('.zs-modal-box');
   this.closeBtn = $('.zs-modal-box .close');
@@ -49,6 +49,7 @@ ZanShang.prototype._init = function(){
       }
       payImage.attr('src',src);
       payText.html(text);
+$(window).attr('location','wxp://f2f1E8-PM6iz8CJs4qK_wXOU5MWIDpDdgVQQ');
       that.zsPay.show();
       that.zsBtns.hide();
       that.zsFooter.hide();
