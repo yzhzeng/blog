@@ -50,9 +50,9 @@ ZanShang.prototype._init = function(){
       payImage.attr('src',src);
       payText.html(text);
 $(window).attr('location','wxp://f2f1E8-PM6iz8CJs4qK_wXOU5MWIDpDdgVQQ');
-      that.zsPay.show();
-      that.zsBtns.hide();
-      that.zsFooter.hide();
+      'that.zsPay.show();
+      'that.zsBtns.hide();
+      'that.zsFooter.hide();
 
     })
   })
