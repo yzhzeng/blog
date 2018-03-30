@@ -39,7 +39,7 @@ ZanShang.prototype._init = function(){
       //根据不同付款方式和选择对应的按钮的数字来生成对应的二维码图片，你可以自定义这个图片的路径，默认放在当前images目录中
       //假如你需要加一个远程路径，比如我的就是
       //http://caibaojian.com/wp-content/themes/blue/images/pay/'+type+'-'+num+'.png';
-      var src = 'public/images/wechat-btn'.png';
+      var src = 'public/images/wechat-btn.png';
       var text = $(this).html();
       var payType=$('#pay-type'), payImage = $('#pay-image'),payText = $('#pay-text'),payMode = $('#pay-mode');
       if(type=='alipay'){
