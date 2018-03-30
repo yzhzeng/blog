@@ -79,7 +79,6 @@ alert(isMobile);
 
 function isWeiXin() {
     var ua = window.navigator.userAgent.toLowerCase();
-alert(ua.match(/MicroMessenger/i));
     if (ua.match(/MicroMessenger/i) == 'micromessenger') {
         return true;
     } else {
