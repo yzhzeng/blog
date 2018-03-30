@@ -46,7 +46,7 @@ ZanShang.prototype._init = function(){
         payType.html('支付宝');
       }else{
         payType.html('微信');
-	  if(isWeiXin()){
+	  if(/micromessenger/.test(navigator.userAgent.toLowerCase())){
 	      payMode.html('长按二维码识别并支付');
         }
       }
@@ -62,27 +62,3 @@ ZanShang.prototype._init = function(){
   })
 }
 var zs = new ZanShang();
-/*
-function isMobile(){
-    var ua = navigator.userAgent;
-    var ipad = ua.match(/(iPad).*OS\s([\d_]+)/),
-        isIphone = !ipad && ua.match(/(iPhone\sOS)\s([\d_]+)/),
-        isAndroid = ua.match(/(Android)\s+([\d.]+)/),
-        isMobile = isIphone || isAndroid;
-    if(isMobile) {
-        return true;
-    }else {
-        return false;
-    }
-}
-*/
-function isWeiXin() {
-    var ua = navigator.userAgent.toLowerCase();
-alert(/micromessenger/.test(ua));
-    if (/micromessenger/.test(ua)) {
-        return true;
-    } else {
-        return false;
-    }
-}
-
