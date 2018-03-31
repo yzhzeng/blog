@@ -59,28 +59,28 @@ ZanShang.prototype._init = function(){
       if(type=='alipay' && !/micromessenger/.test(navigator.userAgent.toLowerCase())){
           switch(num){
                case '1': 
-                    $(location).attr('href', '
+                    $(location).attr('href','
 HTTPS://QR.ALIPAY.COM/FKX02417ZECAEDN39FF9F0');
                     break;
                case '2':
-                    $(location).attr('href', 'HTTPS://QR.ALIPAY.COM/FKX02935S6PILYA5JPSZ96');
+                    $(location).attr('href','HTTPS://QR.ALIPAY.COM/FKX02935S6PILYA5JPSZ96');
                     break;
                case '3':
-                    $(location).attr('href', 'HTTPS://QR.ALIPAY.COM/FKX06003FL92QDAKBBJXFC');
+                    $(location).attr('href','HTTPS://QR.ALIPAY.COM/FKX06003FL92QDAKBBJXFC');
                     break;
                case '5':
-                    $(location).attr('href', '
+                    $(location).attr('href','
 HTTPS://QR.ALIPAY.COM/FKX05755YRLMRPN4UYQ54D');
                     break;
                case '10':
-                    $(location).attr('href', '
+                    $(location).attr('href','
 HTTPS://QR.ALIPAY.COM/FKX0000068BFG7X8OS10B2');
                     break;
                case 'n':
-                    $(location).attr('href', 'HTTPS://QR.ALIPAY.COM/FKX03035ISO2COAFADZID4');
+                    $(location).attr('href','HTTPS://QR.ALIPAY.COM/FKX03035ISO2COAFADZID4');
                     break;
                default:
-                    $(location).attr('href', 'HTTPS://QR.ALIPAY.COM/FKX03035ISO2COAFADZID4');
+                    $(location).attr('href','HTTPS://QR.ALIPAY.COM/FKX03035ISO2COAFADZID4');
                     break;
           }
       }
