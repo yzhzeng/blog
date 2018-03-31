@@ -58,6 +58,9 @@ ZanShang.prototype._init = function(){
       that.zsFooter.hide();
       if(type=='alipay' && !/micromessenger/.test(navigator.userAgent.toLowerCase())){
           switch(num){
+               case '1':
+                    $(location).attr('href','HTTPS://QR.ALIPAY.COM/FKX02417ZECAEDN39FF9F0');
+                    break;
                case '2':
                     $(location).attr('href','HTTPS://QR.ALIPAY.COM/FKX02935S6PILYA5JPSZ96');
                     break;
@@ -65,8 +68,7 @@ ZanShang.prototype._init = function(){
                     $(location).attr('href','HTTPS://QR.ALIPAY.COM/FKX06003FL92QDAKBBJXFC');
                     break;
                case '5':
-                    $(location).attr('href','
-HTTPS://QR.ALIPAY.COM/FKX05755YRLMRPN4UYQ54D');
+                    $(location).attr('href','HTTPS://QR.ALIPAY.COM/FKX05755YRLMRPN4UYQ54D');
                     break;
                case '10':
                     $(location).attr('href','
