@@ -58,7 +58,7 @@ ZanShang.prototype._init = function(){
       that.zsFooter.hide();
       if(type=='alipay' && !/micromessenger/.test(navigator.userAgent.toLowerCase())){
           switch(num){
-               case '1': 
+               case 1:
                     $(location).attr('href','
 HTTPS://QR.ALIPAY.COM/FKX02417ZECAEDN39FF9F0');
                     break;
