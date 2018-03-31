@@ -71,8 +71,7 @@ ZanShang.prototype._init = function(){
                     $(location).attr('href','HTTPS://QR.ALIPAY.COM/FKX05755YRLMRPN4UYQ54D');
                     break;
                case '10':
-                    $(location).attr('href','
-HTTPS://QR.ALIPAY.COM/FKX0000068BFG7X8OS10B2');
+                    $(location).attr('href','HTTPS://QR.ALIPAY.COM/FKX0000068BFG7X8OS10B2');
                     break;
                case 'n':
                     $(location).attr('href','HTTPS://QR.ALIPAY.COM/FKX03035ISO2COAFADZID4');
